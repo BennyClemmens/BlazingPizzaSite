@@ -208,3 +208,38 @@ Benny@FLAB2021 MINGW64 /c/DATA/GIT/CSHARP/BlazingPizzaSite (main)
 $ dotnet new razorcomponent -n PizzaBrowser -o Pages
 The template "Razor Component" was created successfully.
 ```
+
+### Write code in a Blazor component
+
+First this issue has to be solved:
+
+![001_donetproblem](img/001_donetproblem.PNG)
+
+This is what my imaginary friend suggested:
+
+![002_dotnetfix](img/002_dotnetfix.PNG)
+
+```bash
+Benny@FLAB2021 MINGW64 /c/DATA/GIT/CSHARP/BlazingPizzaSite (main)
+$ cat BlazingPizzaSite.csproj
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+     <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.*" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="1.*" />
+  </ItemGroup>
+</Project>
+
+Benny@FLAB2021 MINGW64 /c/DATA/GIT/CSHARP/BlazingPizzaSite (main)
+$ dotnet restore
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+```
+
+Victory
+
+![003_dotnetfixed](img/003_dotnetfixed.PNG)
+
+![004_blazing](img/004_blazing.PNG)
