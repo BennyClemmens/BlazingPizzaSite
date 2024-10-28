@@ -197,29 +197,14 @@ remote: Resolving deltas: 100% (1/1), done.
 To https://github.com/BennyClemmens/BlazingPizzaSite.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
-$
+```
 
+### Create Blazor components
 
+Note: the app was allready created in the previous step.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```bash
+Benny@FLAB2021 MINGW64 /c/DATA/GIT/CSHARP/BlazingPizzaSite (main)
+$ dotnet new razorcomponent -n PizzaBrowser -o Pages
+The template "Razor Component" was created successfully.
 ```
